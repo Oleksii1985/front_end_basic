@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font: 16px/22px Arial, sans-serif;
+}
+
+.main{
+  margin: 0 auto;
+  width: 1360px;
+}
+
+.logo{
+  width: 142px;
+}
+
+.nav{
+  text-align: center;
+}
+
+.link{
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(246, 84, 21);
+}
+.main-text{
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.text{
+  line-height: 24px;
+}
+
+.inline-block{
+  margin: 10px;
+  display: inline-block;
+  width: 400px;
+  padding: 15px;
+  border: 1px solid orange;
+  font-size: 16px;
+}
+
+.holder{
+  text-align: center;
+  font-size: 0;
+}
+
+.image-text{
+  text-align: left;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.paragraph-text{
+  text-align: left;
+}
