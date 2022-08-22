@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font: 14px/18px 'Noto Sans', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  background: #FFB200;
+  position: sticky;
+  top: 50px;
+  z-index: 2;
+}
+
+.holder{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.box-one{
+  margin-top: 150px;
+  margin-bottom: 18px;
+}
+
+.list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.list::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.list-item{
+  width: 340px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.nusha{
+  background: #FCE2DB;
+  float: left;
+}
+
+.nusha::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/img01.png);
+  width: 153px;
+  height: 200px;
+  top: -95px;
+  left: -100px;
+}
+
+.krosh{
+  background: #89CFFD;
+  float: right;
+}
+
+.krosh::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/img02.png);
+  width: 200px;
+  height: 159px;
+  top: -72px;
+  right: -80px;
+}
+
+.barash{
+  background: #FFCCB3;
+  float: left;
+}
+
+.barash::before{
+  content: "";
+  position: fixed;
+  background-image: url(../images/img04.png);
+  width: 199px;
+  height: 177px;
+  bottom: -28px;
+  left: 244px;
+}
+
+.link-item{
+  text-decoration: none;
+}
+
+.losyash{
+  background: #FFC23C;
+  float: right;
+}
+
+.losyash::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/img03.png);
+  width: 166px;
+  height: 200px;
+  bottom: -122px;
+  right: -68px;
+}
