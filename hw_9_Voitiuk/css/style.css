@@ -273,8 +273,6 @@ a:hover {
 }
 
 .third-heading-list {
-  display: flex;
-  flex-direction: column;
   margin: 0 0 42px 0;
   padding-left: 16px;
 }
@@ -299,6 +297,7 @@ a:hover {
   border-collapse: collapse;
   width: 100%;
   margin: 0 auto 58px;
+  padding: 0 5px;
   text-align: center;
   color: #282b2f;
 }
@@ -312,17 +311,14 @@ a:hover {
 }
 
 .table-head-cell {
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 700;
   padding: 20px 0;
 }
 
 .table-cell {
   padding: 8px 0;
-}
-
-.table-heading {
-  font-size: 18px;
-  line-height: 38px;
-  font-weight: 700;
 }
 
 .rows {
@@ -374,7 +370,7 @@ a:hover {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  padding: 15px 0;
+  padding: 15px 5px;
   border: 2px solid #009688;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
@@ -408,7 +404,7 @@ a:hover {
   line-height: 20px;
   border: none;
   background: none;
-  color: #009688;
+  color: #bdc6ca;
   flex-grow: 1;
   padding: 5px 10px;
   border-radius: 5px;
@@ -498,7 +494,7 @@ a:hover {
 .link-all-news::after {
   content: '';
   position: absolute;
-  bottom: 1285px;
+  bottom: 1196px;
   right: 57px;
   width: 16px;
   height: 14px;
