@@ -1,0 +1,35 @@
+/* 'Bebas Neue', cursive; */
+
+body{
+  margin: 0;
+  background: #F2F2F2;
+  color: #48555B;
+  font: 400 13px/23px 'Open Sans', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  color: #48555B;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #00A4E5;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/bg.png) no-repeat;
+  background-size: cover;
+}
+
+.white-logo{
+  z-index: 1;
+}
