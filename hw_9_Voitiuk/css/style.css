@@ -183,6 +183,7 @@ a:hover {
   font-weight: 400;
 }
 
+/* span-second-heading это тоже заголовок, минимум стронг */
 .span-second-heading {
   font-size: 20px;
   line-height: 24px;
@@ -206,7 +207,7 @@ a:hover {
 
 .list-item-second-heading {
   position: relative;
-  padding: 0px 0px 13px 20px;
+  padding: 0px 0px 13px 40px;
   margin: 1px 0px 0px -6px;
 }
 
@@ -214,6 +215,7 @@ a:hover {
   margin: 0 0 0 -6px;
 }
 
+/* .list-item-second-heading::before тут justify лишний */
 .list-item-second-heading::before {
   content: '';
   position: absolute;
@@ -222,12 +224,12 @@ a:hover {
   width: 12px;
   height: 2px;
   background: #546e7a;
-  justify-content: space-between;
 }
 
+/* .link-item-second-heading не тот цвет текста */
+/* .link-item-second-heading отступ на ли */
 .link-item-second-heading {
-  padding-left: 10px;
-  color: #84b6e7;
+  color: #3888d8;
 }
 
 .third-article {
@@ -237,10 +239,11 @@ a:hover {
   margin-bottom: 46px;
 }
 
+/*  third-heading color жирность текста не та */
 .third-heading {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 400; /* Фотошоп дает мне regular */
   margin-bottom: 14px;
 }
 
@@ -272,9 +275,8 @@ a:hover {
   margin-bottom: 25px;
 }
 
+/* .third-heading-list зачем здесь флексбокс? */
 .third-heading-list {
-  display: flex;
-  flex-direction: column;
   margin: 0 0 42px 0;
   padding-left: 16px;
 }
@@ -299,6 +301,7 @@ a:hover {
   border-collapse: collapse;
   width: 100%;
   margin: 0 auto 58px;
+  padding: 0 5px;
   text-align: center;
   color: #282b2f;
 }
@@ -311,18 +314,17 @@ a:hover {
   padding-bottom: 5px;
 }
 
+/*  table-heading стили на th, и тогда класс на тр не нужен будет */
 .table-head-cell {
-  padding: 20px 0;
-}
-
-.table-cell {
-  padding: 8px 0;
-}
-
-.table-heading {
   font-size: 18px;
   line-height: 38px;
   font-weight: 700;
+  padding: 20px 0;
+}
+
+/*  table у ячеек таблицы должны быть боковые отступы, чтобы при добавлении текст не слипался */
+.table-cell {
+  padding: 8px 8px;
 }
 
 .rows {
@@ -369,12 +371,13 @@ a:hover {
   color: #fefefe;
 }
 
+/* link-tab-item у кнопок должны быть боковые отступы, чтобы при добавлении текст не слипался */
 .link-tab-item {
   width: 250px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  padding: 15px 0;
+  padding: 15px 10px;
   border: 2px solid #009688;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
@@ -403,17 +406,20 @@ a:hover {
   border: 2px solid #009688;
 }
 
+/* text-input текст не должен быть зеленым */
 .text-input {
   font-size: 16px;
   line-height: 20px;
   border: none;
   background: none;
-  color: #009688;
+  color: #bdc6ca;
   flex-grow: 1;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
+/* search-btn отступ до края формы не по дизайну */
+/* Честно говоря я не понял)) */
 .search-btn {
   position: absolute;
   border: none;
@@ -478,13 +484,16 @@ a:hover {
   font-weight: 300;
 }
 
+/* aside-link отступ на родителя */
+/* Не смог поправить, полностью ломает структуру не заню почему */
 .aside-link {
   margin: 0 0 25px;
 }
 
+/* link-all-news нужен отступ слева */
 .link-all-news {
   width: 100%;
-  padding: 14px 35px 14px 0;
+  padding: 14px 25px 14px 10px;
   text-align: center;
   border: 2px solid #009688;
   border-radius: 5px;
@@ -498,7 +507,7 @@ a:hover {
 .link-all-news::after {
   content: '';
   position: absolute;
-  bottom: 1285px;
+  bottom: 1196px;
   right: 57px;
   width: 16px;
   height: 14px;
@@ -590,8 +599,8 @@ a:hover {
 
 .social-link{
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 27px;
+  height: 27px;
   font-size: 0;
   line-height: 0;
   border: 2px solid transparent;
@@ -600,7 +609,10 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+/* social-link на ховер у иконок размер больше */
 .social-link:hover{
+  width: 32px;
+  height: 32px;
   border: 2px solid #07998b;
 }
 

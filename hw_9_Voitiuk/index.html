@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <!-- не все варианты жирности шрифта подключены -->
   <link rel="stylesheet" href="css/style.css">
   <title>In Time</title>
 </head>
@@ -88,7 +89,8 @@
           есть
           место элегантным вечерним и дневным платьях, дорогим деловым костюмам и мехам, то такой гардероб обязательно
           стоит дополнить элитной моделью модных женских часов.</p>
-        <span class="span-second-heading"><em>Ассортимент часов:</em></span>
+        <!-- span-second-heading это тоже заголовок, минимум стронг -->
+        <h2 class="span-second-heading"><em>Ассортимент часов:</em></h2>
         <ul class="list-second-heading">
           <li class="list-item-second-heading">
             <a href="#" class="link-item-second-heading">Женские часы</a>
@@ -129,7 +131,8 @@
       <div class="table-container">
         <table class="table">
           <caption class="caption">ТАБЛИЦА</caption>
-          <tr class="table-heading">
+          <!--  table-heading стили на th, и тогда класс на тр не нужен будет -->
+          <tr>
             <th class="table-head-cell">Время</th>
             <th class="table-head-cell">Тестовое название</th>
             <th class="table-head-cell">Цвет</th>
@@ -189,7 +192,8 @@
       <ul class="list-aside">
         <li class="list-item-aside">
           <img class="aside-img" src="images/first_aside_img.png" alt="first-aside-image">
-          <span class="aside-span">Модные женские часы в 2019 году</span>
+          <!-- aside-span это заголовок -->
+          <h4 class="aside-span">Модные женские часы в 2019 году</h4>
           <time class="aside-time" datetime="2019-06-08">08.06.2019</time>
           <p class="aside-text">С конца 20 века наручные часы стали неизменным модным аксессуаром, для женщин,
             подчеркивающим
@@ -199,7 +203,7 @@
         </li>
         <li class="list-item-aside">
           <img class="aside-img" src="images/second_aside_img.png" alt="second-aside-image">
-          <span class="aside-span">Самый модный цвет 2019</span>
+          <h4 class="aside-span">Самый модный цвет 2019</h4>
           <time class="aside-time" datetime="2019-06-07">07.06.2019</time>
           <p class="aside-text">Известные часовые компании тщательно разрабатывают дизайн не только для эксклюзивных
             коллекций, но и для моделей</p>
@@ -207,7 +211,7 @@
         </li>
         <li class="list-item-aside">
           <img class="aside-img" src="images/third_aside_img.png" alt="third-aside-image">
-          <span class="aside-span">Мужские спортивные часы 2019</span>
+          <h4 class="aside-span">Мужские спортивные часы 2019</h4>
           <time class="aside-time" datetime="2019-06-05">05.06.2019</time>
           <p class="aside-text">Приобрести наручные часы в модном дизайне могут не только состоятельные люди. Для
             массового рынка также выпускаются доступные по цене качественные модели женских часов таких известных
