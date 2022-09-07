@@ -1,35 +1,35 @@
-body{
+body {
   margin: 0;
   font: 16px/23px 'Open Sans', sans-serif;
   background: #fff;
   color: #48555B;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: underline;
   color: #48555B;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
   color: #00A4E5;
 }
 
-.wrapper{
+.wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.header{
+.header {
   /* pass */
 }
 
-.top-header{
+.top-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,7 +42,7 @@ a:hover{
   border: 1px solid #979797;
 }
 
-.white-logo{
+.white-logo {
   display: block;
   background-image: url(../images/projeco-logo.png);
   width: 103px;
@@ -52,16 +52,16 @@ a:hover{
   margin-top: 52px;
 }
 
-.white-logo-link{
+.white-logo-link {
   display: block;
   height: 100%;
 }
 
-.top-header-content{
+.top-header-content {
   /* pass */
 }
 
-.main-heading{
+.main-heading {
   color: #fff;
   min-width: 625px;
   margin: 0;
@@ -71,7 +71,7 @@ a:hover{
   letter-spacing: 6px;
 }
 
-.head-span{
+.head-span {
   display: block;
   min-width: 386px;
   font-size: 16px;
@@ -81,7 +81,7 @@ a:hover{
   color: #fff;
 }
 
-.scroll-down-link{
+.scroll-down-link {
   min-width: 124px;
   font-size: 11px;
   line-height: 16px;
@@ -92,19 +92,19 @@ a:hover{
   text-decoration: none;
 }
 
-.nav-header{
+.nav-header {
   width: 1440px;
   margin: 0 auto;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: space-around;
 }
 
-.black-logo{
+.black-logo {
   display: block;
   background: url(../images/projeco-logo-black.png) no-repeat;
   width: 81px;
@@ -114,12 +114,12 @@ a:hover{
   margin-top: 24px;
 }
 
-.black-logo-link{
+.black-logo-link {
   display: block;
   height: 100%;
 }
 
-.nav-list{
+.nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -127,12 +127,12 @@ a:hover{
   text-transform: uppercase;
 }
 
-.nav-list.active{
+.nav-list.active {
   color: #00A4E5;
   font-weight: 700;
 }
 
-.nav-list-item{
+.nav-list-item {
   padding: 21px 21px;
   font-size: 12px;
   line-height: 16px;
@@ -141,30 +141,30 @@ a:hover{
   transition: 0.4s ease-in-out all;
 }
 
-.nav-list-item:hover{
+.nav-list-item:hover {
   font-weight: 700;
   color: #00A4E5;
   transition: 0.4s ease-in-out all;
 }
 
-.nav-item-link{
+.nav-item-link {
   text-decoration: none;
 }
 
-.main{
+.main {
   width: 1440px;
   margin: 0 auto;
   display: flex;
 }
 
-.main-container{
+.main-container {
   width: 941px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.story{
+.story {
   min-width: 121px;
   margin: 0;
   padding: 65px 5px 10px;
@@ -175,24 +175,24 @@ a:hover{
   color: #48555B;
 }
 
-.line{
+.line {
   width: 50px;
   margin: 0 auto 170px;
   border-bottom: 2px solid #00A4E5;
 }
 
-.story-content{
+.story-content {
   display: flex;
   justify-content: space-between;
 }
 
-.story-text-content{
+.story-text-content {
   display: flex;
   flex-direction: column;
   width: 405px;
 }
 
-.story-heading{
+.story-heading {
   margin: 0 0 40px;
   font-size: 20px;
   line-height: 27px;
@@ -200,11 +200,11 @@ a:hover{
   padding: 0 10px;
 }
 
-.konstruct{
+.konstruct {
   color: #16ACE8;
 }
 
-.story-text{
+.story-text {
   padding: 0 10px;
   margin: 0;
   font-size: 13px;
@@ -212,11 +212,11 @@ a:hover{
 
 }
 
-.img-content{
+.img-content {
   position: relative;
 }
 
-.list-img{
+.list-img {
   margin: 34px 0 0;
   padding: 0;
   list-style: none;
@@ -225,11 +225,11 @@ a:hover{
   gap: 20px;
 }
 
-.list-item-img{
-/* pass */
+.list-item-img {
+  /* pass */
 }
 
-.we-plan{
+.we-plan {
   position: absolute;
   font-size: 24px;
   line-height: 29px;
@@ -239,7 +239,7 @@ a:hover{
   left: 14px;
 }
 
-.we-manage{
+.we-manage {
   position: absolute;
   font-size: 24px;
   line-height: 29px;
@@ -249,7 +249,7 @@ a:hover{
   left: 174px;
 }
 
-.we-build{
+.we-build {
   position: absolute;
   font-size: 24px;
   line-height: 29px;
@@ -259,11 +259,11 @@ a:hover{
   right: 52px;
 }
 
-.list-link-img{
+.list-link-img {
   width: 140px;
   height: 224px;
 }
 
-.list-link-img{
+.list-link-img {
   text-decoration: none;
 }
