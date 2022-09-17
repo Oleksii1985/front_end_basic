@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom form</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/jcf.js"></script>
+  <script src="js/jcf.select.js"></script>
+  <script src="js/jquery.main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="#" class="custom-form">
+      <div class="info">
+        <input class="radio" type="radio" checked name="radio" id="radio1">
+        <label class="radio-label" for="radio1" name="radio">Male</label>
+      </div>
+      <div class="info info-second-radio">
+        <input class="radio" type="radio" name="radio" id="radio2">
+        <label class="radio-label female" for="radio2" name="radio">Female</label>
+      </div>
+      <div class="info info-select">
+        <label for="select" class="select-label">Choose your city</label>
+        <select class="select-option" name="" id="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Odesa">Odesa</option>
+        </select>
+      </div>
+      <div class="agreement">
+        <input class="checkbox" type="checkbox" checked name="" id="agree-check">
+        <label class="check-label" for="agree-check">Yes, I agree</label>
+      </div>
+    </form>
+    <div class="socials-box">
+      <ul class="socials">
+        <li class="social-item">
+          <a href="#" class="social-link icon-google"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link icon-facebook"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link icon-instagram"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link icon-twitter"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link icon-linkedin"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
