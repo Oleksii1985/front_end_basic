@@ -83,24 +83,11 @@ a:hover {
   text-decoration: none;
 }
 
+/* 1) .nav-header::after почему полоску просто не сделать бордером без псевдоэлемента? И шири на бордера 100%, а не 1440 */
 .nav-header {
   width: 100%;
-}
-
-.nav-header::before {
-  width: 1440px;
-  content: '';
-  display: block;
-  margin: 0 auto;
   border-top: 1px solid #E6E6E6;
-}
-
-.nav-header::after {
-  width: 1440px;
-  content: '';
-  display: block;
-  margin: 0 auto;
-  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .nav {
@@ -268,26 +255,25 @@ a:hover {
 
 .capabilities {
   margin: 0;
-  padding: 0 0 14px;
   min-width: 198px;
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
 }
-
-.capabilities-text {
+/* 3) capabilities-text паддинг справа лишний */
+/* переименовал */
+.main-capabilities-text {
   margin: 0;
   font-size: 11px;
   line-height: 19px;
-  padding: 0 52px 0 0;
 }
 
+/* 2) .btn ровняй паддингами, а не высотой */
 .btn {
   background: #00A4E5;
   display: inline-block;
   vertical-align: middle;
   min-width: 150px;
-  height: 40px;
   padding: 11px 27px;
   color: #fff;
   font-size: 13px;
@@ -331,16 +317,17 @@ a:hover {
   line-height: 23px;
 }
 
+/* 4) .bottom-heading НЕ фиксируй высоту! задай мин хейт и паддинг снизу не нужен такой большой */
 .bottom-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   width: 100vw;
-  height: 499px;
+  min-height: 499px;
   background: url(../images/second_fix_bg.jpg) 50% 100% no-repeat;
   background-size: cover;
-  padding: 120px 0 305px;
+  padding: 135px 0 210px;
 }
 
 .bottom-heading-text {
@@ -366,6 +353,13 @@ a:hover {
   margin-bottom: 42px;
 }
 
+.footer-info {
+  width: 100%;
+  display: flex;
+  background: #141A20;
+  flex-direction: column;
+}
+
 .mail-section {
   width: 1440px;
   margin: 0 auto;
@@ -383,18 +377,12 @@ a:hover {
   vertical-align: middle;
 }
 
+/* 7) mail правый паддинг такой же как левый */
 .mail {
   min-width: 250px;
   border: 1px solid #979797;
-  padding: 11px 98px 11px 16px;
+  padding: 11px 98px 10px 11px;
   margin-right: -5px;
-}
-
-.footer-info {
-  width: 100%;
-  display: flex;
-  background: #141A20;
-  flex-direction: column;
 }
 
 .wrapper-section {
@@ -452,10 +440,12 @@ a:hover {
   list-style: none;
 }
 
+/* 11) .footer-item меньше межстрочное расстояние, больше паддинги */
 .footer-item {
   font-size: 11px;
-  line-height: 25px;
+  line-height: 16px;
   font-weight: 600;
+  padding: 4px 0;
 }
 
 .footer-link {
@@ -480,6 +470,9 @@ a:hover {
 }
 
 .info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-right: 46px;
   font-size: 11px;
   line-height: 16px;
@@ -506,15 +499,18 @@ a:hover {
   gap: 35px;
 }
 
+/* Сделал как png надо подменять картинки))) муторно */
+.social-link:hover{
+  background: #00A4E5;
+}
+
+/* 15) .trade-mark контейнер 940рх, внутри р */
 .trade-mark {
-  min-width: 308px;
+  width: 940px;
   margin: 0 auto;
+  text-align: center;
   font-size: 11px;
   line-height: 15px;
   color: #fff;
   padding: 22px 0 23px;
-}
-
-.ftm {
-  margin: 0;
 }

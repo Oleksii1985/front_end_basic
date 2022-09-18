@@ -88,7 +88,8 @@
       </div>
       <div class="second-main-container">
         <h2 class="capabilities">OUR CAPABILITIES</h2>
-        <p class="capabilities-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        <p class="main-capabilities-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+          nibh
           euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
         <button class="btn">ALL SERVICES</button>
       </div>
@@ -123,25 +124,29 @@
       <button class="btn">GET IN TOUCH</button>
     </div>
   </div>
-  <div class="footer-wrapper">
-    <footer class="footer-mail">
+  <!-- 5) начиная с формы подписки это все футер\ -->
+  <footer class="footer-wrapper">
+    <div class="footer-mail">
       <div class="mail-section">
-        <span class="letter">Newsletter Signup</span>
+        <!-- 6) letter это лейбл -->
+        <label class="letter">Newsletter Signup</label>
         <input type="email" placeholder="test@youremail.com" class="mail">
         <button class="btn">SIGNUP</button>
       </div>
-    </footer>
+    </div>
     <div class="footer-info">
       <div class="wrapper-section">
-        <section class="footer-section">
+        <!-- 9) footer-section в футере я бы секций не делала, они для мейна в основном -->
+        <div class="footer-section">
           <h4 class="footer-heading">COMPANY</h4>
           <strong class="white-logo logo-margin">
             <a href="#" class="white-logo-link">Konstruct</a>
           </strong>
           <p class="footer-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
             tincidunt ut laoreet dolore magna aliquam erat.</p>
-        </section>
+        </div>
         <div class="three-lists">
+          <!-- 10) links лишний блок, убираю и все ломается -->
           <div class="links">
             <h4 class="links-heading">LINKS</h4>
             <div class="list-links">
@@ -187,6 +192,7 @@
             </div>
           </div>
         </div>
+        <!-- 12) contact-us-block лишний блок. Тоже ломается все -->
         <div class="contact-us">
           <div class="contact-us-block">
             <h4 class="contact-heading">CONTACT US</h4>
@@ -195,9 +201,9 @@
             <div class="info-block">
               <address class="address">213 Baker Street<br>Oriel City Kounty<br>7000 KNW,<br>Kountry Name
               </address>
-              <p class="phone"><a class="color-footer-link" href="tel:+239942334022">+23 994 233 4022</a></p>
-              <p class="mail-footer"><a class="color-footer-link"
-                  href="mailto:info@konstruct.com">info@konstruct.com</a></p>
+              <!-- 13) phone зачем ссылки заворачивать в р? -->
+              <a class="color-footer-link" href="tel:+239942334022">+23 994 233 4022</a>
+              <a class="color-footer-link" href="mailto:info@konstruct.com">info@konstruct.com</a>
             </div>
             <div class="socials">
               <ul class="social-list">
@@ -222,10 +228,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-mail ftm">
-    <span class="trade-mark">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</span>
-  </div>
+    <p class="trade-mark">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
+  </footer>
 </body>
 
 </html>
