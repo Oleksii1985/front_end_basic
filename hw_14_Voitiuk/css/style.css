@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font: 20px/24px 'Open Sans', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  background: rgb(39, 33, 33);
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  width: 480px;
+  margin: 0 auto;
+  background: lightblue;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.drop-link,
+.drop-link-second,
+.nav-item-link {
+  display: block;
+  padding: 14px 20px
+}
+
+.nav-item-link:hover {
+  text-decoration: none;
+  color: #000;
+  background: lightblue;
+}
+
+.drop-down-list-second,
+.drop-down-list {
+  width: 144px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+
+.nav-item:hover .drop-down-list {
+  display: block;
+}
+
+.nav-item:hover .nav-item-link,
+.drop-link:hover {
+  text-decoration: none;
+  color: #000;
+  background: lightblue;
+}
+
+.drop-down-list-second {
+  left: 100%;
+  top: 52px;
+}
+
+.drop-down-item:hover .drop-down-list-second {
+  display: block;
+}
+
+.drop-down-item:hover .drop-link,
+.drop-link-second:hover {
+  text-decoration: none;
+  color: #000;
+  background: lightblue;
+}
